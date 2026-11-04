@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.44.0** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.45.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -80,6 +80,20 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.45.1
+
+*4. November 2026*
+
+- **Verbessert:** Updates kommen jetzt aus einem eigenen Release-Repository (github.com/jkkSofting/TimeTrack-Releases), in dem auch eine Anleitung und alle Neuigkeiten stehen. Für dich ändert sich nichts.
+
+### 2026.45.0 - Alle Projekte im Quick Select
+
+*4. November 2026*
+
+- **Neu:** Unter „Projekte“ legt der Schalter „Quick Select“ fest, ob ein Projekt im Quick Select und im Quick Switch wählbar ist. Standardmäßig sind alle Projekte dabei.
+- **Verbessert:** Das Quick-Switch-Fenster bietet jetzt alle Projekte zum Starten an, nicht mehr nur die im Quick Select eingerichteten.
+- **Behoben:** Neu angelegte, umbenannte oder gelöschte Projekte erscheinen sofort im Quick Select und im Quick Switch, nicht erst nach einem Neustart.
 
 ### 2026.44.0 - Designs, Hilfe & Neuigkeiten
 
