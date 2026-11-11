@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.45.3** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.46.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -54,6 +54,7 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 | **Stundenbuchung** | Alle Buchungen eines Tages als Zeitstrahl ansehen, nachtragen und korrigieren. Zeigt Pausen (auch die gesetzliche Pause) und die real gearbeitete Zeit. |
 | **Fragmentierung** | Wie zersplittert war dein Tag, deine Woche oder dein Monat? |
 | **SAP-Verrechnung** | Was am Monatsende wirklich im SAP gebucht werden muss: Externe Zeit deckt parallele interne Zeit ab. |
+| **Projektcontrolling** | SAP-Plan- und Ist-Kosten aus einer Excel-Datei zu deinen Kostenträgern ansehen (nur lesend), mit Kostenverlauf nach SAP-Stand. Mit dem Stundensatz, den du je Projekt einträgst, lassen sich die Beträge auch als rechnerische Stunden anzeigen. Daneben der lokale Stundenverlauf aus deinen Buchungen – getrennt von den Geldbeträgen. |
 | **Projekte** | Projekte anlegen, bearbeiten und auswerten; festlegen, welche im Quick Switch wählbar sind. |
 | **Einstellungen** | Design (hell/dunkel, mehrere Motive, saisonale Designs), Programmstart, Automatisierung, Updates und Datensicherung. |
 | **Tray-Symbol** | TimeTrack läuft im Infobereich weiter und meldet sich, wenn eine Buchung automatisch beendet wurde, länger kein Projekt läuft oder ein Update bereitsteht. |
@@ -63,6 +64,7 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 
 - Die Buchungen liegen lokal in einer Datenbank: `C:\ProgramData\Kaltenmark-Engineering\TimeTracker\timetracker.db`. TimeTrack schickt keine Daten ins Netz; Verbindung zum Internet braucht nur die Suche nach Updates.
 - **Datensicherung:** Unter **Einstellungen → Datensicherung** erstellst du Sicherungen und spielst eine vorhandene wieder ein. Sie liegen im Ordner `Backups` neben der Datenbank (`*.timetrack-backup`). Fehlt beim Start die Datenbank, bietet TimeTrack an, die neueste Sicherung zu laden.
+- Das **Projektcontrolling** speichert importierte SAP-Kosten ebenfalls in dieser Datenbank (und damit in Sicherungen). Die Excel-Datei wird nur gelesen, nicht verändert oder behalten, und es werden nur Zeilen zu deinen eigenen Kostenträgern übernommen.
 - Updates und Deinstallation löschen die Datenbank nicht.
 
 ## Deinstallation
@@ -79,6 +81,37 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.46.1 - Tätigkeitsnachweis
+
+*11. November 2026*
+
+- **Neu:** „Tätigkeitsnachweis“ in der Seitenleiste: Du wählst einen Zeitraum (Schnellwahl wie „Letzter Monat“, „Alle Buchungen“ der gewählten Projekte oder Von/Bis) und deine Projekte und exportierst die Buchungen als PDF oder CSV. Eine Vorschau zeigt vorher, was im Nachweis steht, mit Gesamtzeit, Arbeitstagen und jeder Buchung.
+- **Neu:** Das PDF ist ein A4-Dokument: Titel und Zeitraum, Auftragnehmer und Auftraggeber, Eckdaten mit Kostenträger, Zusammenfassung (bei mehreren Projekten mit Stunden und Kostenträger je Projekt), Einzelnachweis mit Zwischen- und Gesamtsumme und eine Bemerkung. Die Tabellenkopfzeile wiederholt sich auf jeder Seite, die Fußzeile nennt die Seitenzahl.
+- **Neu:** Gliederung nach Tag (die Tagessumme lässt sich abschalten), Projekt oder Kalenderwoche, Dauer dezimal (1,50), als h:mm (1:30) oder beides, Uhrzeiten sowie Projekt- und Kostenträger-Spalte nach Wunsch, auf Wunsch im Querformat. Dein Name und deine Anschrift als Auftragnehmer bleiben für den nächsten Nachweis gespeichert.
+- **Neu:** Standard ist die minutengenaue Dauer: Es wird nichts gerundet. Nur auf ausdrücklichen Wunsch rundet der Nachweis die Dauer jeder Buchung kaufmännisch auf 5, 10, 15 oder 30 Minuten und nennt dann die ungerundete Summe. Die Rundung wird nie gemerkt, jeder Nachweis beginnt wieder ohne.
+- **Neu:** Die CSV-Datei hat eine Zeile je Buchung und passt zum deutschen Excel (UTF-8, Semikolon, Dezimalkomma); alternativ international mit Komma und Dezimalpunkt. Text, der mit = + - oder @ beginnt, wird entschärft, damit Excel ihn nicht als Formel ausführt.
+- **Neu:** „PDF-Vorschau“ erzeugt den Nachweis als temporäre Datei und öffnet ihn im PDF-Programm, ohne zu speichern. So prüfst du das Aussehen, bevor du den Nachweis ablegst.
+- **Neu:** Auftrags-/Bestellnummer und Auftraggeber (Name, Anschrift) trägst du einmal ein; TimeTrack merkt sie für das Projekt und füllt sie beim nächsten Nachweis wieder ein. Auftragnehmer und Auftraggeber sind optional: Der Auftraggeber steht nur im PDF, wenn du „Auftraggeber im Dokument zeigen“ wählst. Optional steht ein eigenes Logo oben rechts im PDF.
+- **Neu:** TimeTrack merkt sich deine letzte Auswahl: Optionen, Projekte und die Schnellwahl des Zeitraums. „Letzter Monat“ gilt beim nächsten Mal für den dann letzten Monat.
+- **Neu:** Unter „Projekte“ öffnet ein Symbol in der Zeile den Tätigkeitsnachweis mit diesem Projekt.
+- **Neu:** Vor dem Export prüft TimeTrack die Buchungen und warnt vor fehlenden Beschreibungen, Überschneidungen im selben Projekt, nicht lesbaren Zeiten (diese Buchungen fehlen im Nachweis, sie werden nie mit erfundener Dauer gezählt), Dauer 0 und mehr als 12 Stunden an einem Tag. Betroffene Zeilen sind in der Vorschau hinterlegt.
+- **Neu:** Projektcontrolling: Ein Standard-Stundensatz in der Kopfzeile gilt für jedes Projekt ohne eigenen Satz (je Währung des Imports). Der Stundensatz in den Details eines Projekts überschreibt ihn nur für dieses Projekt, ein leeres Feld nimmt den Standard. Ohne Standard bleibt alles wie bisher.
+- **Verbessert:** Buttons, Eingabefelder, Auswahllisten und ihre Aufklapp-Fenster haben nur noch einen sehr kleinen Eckenradius und wirken eckiger. Ebenso Karten und Innenflächen; nur kleine Kapseln (Status, „Neu“-Marken) bleiben rund.
+
+### 2026.46.0 - Projektcontrolling
+
+*10. November 2026*
+
+- **Neu:** „Projektcontrolling“ in der Seitenleiste: „Excel importieren“ liest Plan- und Ist-Kosten aus einer SAP-Projektcontrolling-Datei (.xlsx) – nur lesend. Importiert werden nur PSP-Elemente, die in einem Kostenträger deiner Projekte enthalten sind; der Kostenträger muss die PSP-Element-ID enthalten, aber nicht genau so heißen.
+- **Neu:** Die Vorschau zeigt vor dem Speichern, was übernommen wird, samt Warnungen und Fehlern mit Blatt und Zelle. Der SAP-Stand kommt aus der Datei (fehlt er, gibst du ihn an), die Währung ist optional.
+- **Neu:** Jeder Import ist ein Stand: Der Kostenverlauf zeigt die Stände nach SAP-Datum. Ein erneuter Import desselben Stands wird nicht doppelt gespeichert, eine Korrektur wird als Revision abgelegt.
+- **Neu:** Lokaler Stundenverlauf je Kostenträger (Tag, Woche, Monat) aus deinen Buchungen. Er steht getrennt von den SAP-Geldbeträgen und ist nicht mit SAP abgestimmt.
+- **Neu:** Stundensatz je Projekt: In den Details trägst du für jedes Projekt seinen Stundensatz ein (je Währung des Imports). Damit rechnet TimeTrack Plan, Ist und Rest zusätzlich in rechnerische Stunden um (Betrag ÷ Stundensatz). Haben Projekte am selben Kostenträger unterschiedliche Sätze, wird nicht umgerechnet. Die Stunden sind eine Schätzung aus Geld, keine gebuchte Zeit.
+- **Neu:** Die erste Spalte der Übersicht, „Stand“, zeigt den Budgetverbrauch in Prozent mit einem kleinen Fortschrittsbalken. Sie bleibt beim horizontalen Scrollen stehen, sodass der Stand immer sichtbar ist.
+- **Neu:** Berechnete Stunden (aus Geld umgerechnet) lassen sich mit „Berechnete Stunden (h) zeigen“ ein- und ausblenden. Die Wahl bleibt gespeichert.
+- **Neu:** Diagramm: Im Projektcontrolling schaltest du zwischen „Tabelle“ und „Diagramm“ um. Das Diagramm zeigt den Stand je PSP-Element über die SAP-Daten – relativ in Prozent des Plans oder in Stunden (aus Geld umgerechnet, dazu für die gewählte Zeile Plan in Stunden und deine lokal gebuchten Stunden, kumuliert). Fährst du mit der Maus über einen Punkt, siehst du den Stand dort; neben einem Punkt zeigt eine Linie alle Werte zum nächsten SAP-Datum. Mit „Kostenträger“ blendest du einzelne Kostenträger im Diagramm ein und aus (mit Suche, „Alle einblenden“ und „Alle ausblenden“).
+- **Verbessert:** Unter „Projekte“ öffnet ein Symbol in der Zeile das Projektcontrolling mit dem Kostenträger des Projekts.
 
 ### 2026.45.3 - Quick Switch statt Quick Select
 
