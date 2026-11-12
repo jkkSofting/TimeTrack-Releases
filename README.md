@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.47.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.47.1.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,12 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.47.1.1
+
+*12. November 2026*
+
+- **Behoben:** To-Do und Notizen: Nach dem Speichern eines Tickets sprang die Auswahl bei „Board von“ auf leer. Das Projekt bleibt jetzt gewählt; dasselbe gilt für die Projektwahl und den Filter bei den Notizen.
 
 ### 2026.47.1 - To-Do und Notizen
 
