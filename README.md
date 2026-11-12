@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.46.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.47.0** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,17 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.47.0 - Plugins
+
+*12. November 2026*
+
+- **Neu:** TimeTrack lässt sich mit Plugins erweitern. Ein Plugin bringt eigene Seiten mit, die in der Seitenleiste unter „Plugins“ erscheinen, und kann Einstellungen ergänzen. Ohne Plugin ändert sich nichts.
+- **Neu:** Einstellungen → Plugins zeigt alle gefundenen Plugins mit Version und Status. Ein neu gefundenes Plugin ist zunächst aus und wird erst geladen, wenn du es einschaltest und TimeTrack neu startest. „Plugin-Ordner öffnen“ führt direkt zum Ordner, „Nach Plugins suchen“ findet neu abgelegte Plugins ohne Neustart (das passiert auch bei jedem Öffnen der Einstellungen) und erkennt ausgetauschte Dateien laufender Plugins.
+- **Neu:** Ein fehlerhaftes Plugin verhindert den Start nicht: Es bleibt aus, und die Einstellungen nennen den Grund, zum Beispiel eine aus dem Internet geladene, von Windows blockierte Datei.
+- **Neu:** Was ein Plugin speichert, liegt in der TimeTrack-Datenbank und ist in jeder Datensicherung enthalten. Zugangsdaten verschlüsselt Windows für deinen Benutzer; nach dem Wiederherstellen auf einem anderen Rechner musst du sie neu eingeben.
+- **Behoben:** Tätigkeitsnachweis, „Nach Tag“: Die Tagessumme stand nur unter Tagen mit mehreren Buchungen und las sich dadurch wie eine zu niedrige Summe über mehrere Tage. Jetzt hat jeder Tag seine eigene Tagessumme.
+- **Verbessert:** Tätigkeitsnachweis: Die Zusammenfassung im PDF (Gesamtzeit, Buchungen, Arbeitstage, Durchschnitt) lässt sich unter „Dokument“ mit „Zusammenfassung zeigen“ ausblenden.
 
 ### 2026.46.1 - Tätigkeitsnachweis
 
