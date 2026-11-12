@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.47.1.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.47.2** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,15 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.47.2 - Tickets im Quick Switch
+
+*12. November 2026*
+
+- **Neu:** Quick Switch hat zwei Modi: „Projekte“ wie bisher und „Tickets“. Im Modus „Tickets“ wählst du ein To-Do-Ticket; die Buchung startet sofort und läuft auf das Projekt, zu dessen Board das Ticket gehört. Als Buchungstext steht der Titel des Tickets statt „Quick Select“. TimeTrack merkt sich den Modus.
+- **Neu:** Welche Tickets der Quick Switch anbietet, legst du unter „To-Do“ fest: Im Editor einer Spalte (Stift-Symbol) schaltest du „Tickets im Quick Switch anbieten“ ein. Ein Blitz im Spaltenkopf zeigt, welche Spalten es sind. Neue Boards und bestehende Spalten „To Do“ eines Projekts bieten ihre Tickets von Anfang an an.
+- **Neu:** Die Liste der Tickets passt sich sofort an, wenn du ein Ticket anlegst, verschiebst, umbenennst oder löschst, oder ein Projekt umbenennst oder löschst.
+- **Verbessert:** Auf ein Projekt läuft immer nur eine Buchung. Ist es schon aktiv, nennt das Quick-Switch-Fenster den Grund, statt nichts zu tun. Die Liste im Fenster heißt jetzt „Aktive Buchungen“.
 
 ### 2026.47.1.1
 
