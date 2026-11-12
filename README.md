@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.47.0** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.47.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,16 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.47.1 - To-Do und Notizen
+
+*12. November 2026*
+
+- **Neu:** „To-Do“ in der Seitenleiste (Gruppe „Organisation“): ein Board wie bei Trello oder Jira, und zwar je Projekt ein eigenes. Oben wählst du unter „Board von“ das Projekt; „Ohne Projekt“ ist für alles, was zu keinem Projekt gehört. Du legst Tickets mit Titel und Beschreibung an und ordnest sie in Spalten.
+- **Neu:** Jedes Board startet mit den Spalten „To Do“, „In Arbeit“ und „Erledigt“. Spalten legst du mit „Neue Spalte“ oder „Spalte hinzufügen“ am Ende des Boards an, benennst sie um, schiebst sie nach links oder rechts und löschst sie mit dem Papierkorb im Spaltenkopf. Hat die Spalte Tickets, fragt TimeTrack vorher nach, denn die Tickets gehen mit.
+- **Neu:** Tickets verschiebst du mit der Maus per Ziehen, in eine andere Spalte oder an eine andere Stelle derselben Spalte; ein farbiger Strich zeigt, wo das Ticket landet. Ein Klick auf ein Ticket öffnet es zum Bearbeiten, dort kannst du es auch einer anderen Spalte zuordnen oder löschen.
+- **Neu:** „Notizen“ in der Seitenleiste: Notizen mit Titel, Text und auf Wunsch einem Projekt. Die Liste ist durchsuchbar und nach Projekt filterbar; wählst du ein Projekt als Filter, gehört eine neue Notiz gleich dazu. TimeTrack speichert Änderungen kurz nach dem Tippen von selbst.
+- **Neu:** Boards und Notizen liegen in der TimeTrack-Datenbank und sind in jeder Datensicherung enthalten. Löschst du ein Projekt, verschwindet sein Board mit; seine Notizen bleiben erhalten, nur ohne Projekt.
 
 ### 2026.47.0 - Plugins
 
