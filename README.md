@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.47.2** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.47.3** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,14 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.47.3 - SAP-Verrechnung zum Kopieren
+
+*16. November 2026*
+
+- **Neu:** SAP-Verrechnung: Ein Klick auf einen Kostenträger kopiert seine Bezeichnung in die Zwischenablage, ein Klick auf die Stunden kopiert sie als „h:mm“. Das geht in der Monatstabelle und in den Tageskarten unter „Im SAP buchen“. Die Fläche färbt sich kurz ein, damit du siehst, dass kopiert wurde.
+- **Neu:** Zusätzlich gilt beim Kostenträger: Rechtsklick kopiert den ganzen Text samt „(KTR-ID)“, Mausradklick nur die ID (nur wenn der Kostenträger eine ID in Klammern hat). Bei den Stunden kopiert der Rechtsklick sie mit Einheit, zum Beispiel „0:49 h“. Der Tooltip beim Überfahren nennt, was welcher Klick kopiert.
+- **Verbessert:** Beim Linksklick fällt die Kostenträger-ID weg: Aus „Bezeichnung (1500420C26FX001.01)“ wird „Bezeichnung“, denn die ID trägst du im SAP in ein eigenes Feld ein. Kostenträger ohne ID in Klammern kopiert TimeTrack unverändert.
 
 ### 2026.47.2 - Tickets im Quick Switch
 
