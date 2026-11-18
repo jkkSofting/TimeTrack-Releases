@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.47.5** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.47.6** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,13 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.47.6 - Quick Switch beim Update sauber speichern
+
+*18. November 2026*
+
+- **Behoben:** Beim Installieren einer neuen Version wurden laufende Quick-Switch-Buchungen nicht zuverlässig gespeichert, weil der Installer TimeTrack beenden konnte, bevor es fertig gespeichert hatte. Jetzt werden die laufenden Abschnitte gespeichert, bevor das Update startet, und auch dann, wenn der Installer TimeTrack selbst schließt oder Windows herunterfährt. Die Einträge sind danach pausiert.
+- **Behoben:** Auch wenn das Hauptfenster bereits geschlossen war, konnte das Speichern beim Beenden übersprungen werden. Das ist behoben.
 
 ### 2026.47.5 - Pinguin: Fisch fangen, Wurfobjekte und Übungsmodus
 
