@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.47.6** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.47.7** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,16 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.47.7 - Navigation, Datumssprünge, Stundenbuchung und Tätigkeitsbericht
+
+*20. November 2026*
+
+- **Verbessert:** Das „Tatsächliche Ende“ wurde aus der Stundenbuchung entfernt.
+- **Neu:** In der Stundenbuchung lässt sich über „Rundungen anzeigen“ zusätzlich die Aufrundung pro Projekt einblenden: pro Buchung in der Timeline und als Summe in der Kennzahlenleiste.
+- **Neu:** In der SAP-Verrechnung und der Fragmentierung springt ein Klick auf das Datum direkt zu diesem Tag in der Stundenbuchung.
+- **Neu:** Zurück/Vor: Ein Verlauf der besuchten Seiten ermöglicht das Vor- und Zurücknavigieren – über die Pfeile oben in der Seitenleiste, Alt+Links/Alt+Rechts oder die Maus-Zusatztasten. Auch die Sprünge zu einem Tag in der Stundenbuchung landen im Verlauf.
+- **Neu:** Im Tätigkeitsbericht wird jetzt die Rundung je Projekt berücksichtigt und ausgewiesen (Option „Rundung je Projekt anwenden“, standardmäßig an): Aufrundungen stehen in PDF, CSV und Vorschau, die reale Summe bleibt sichtbar.
 
 ### 2026.47.6 - Quick Switch beim Update sauber speichern
 
