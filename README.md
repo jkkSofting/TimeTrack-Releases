@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.47.8** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.48.0** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,18 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.48.0 - Standardrundung, Overlays und nur eine Instanz
+
+*23. November 2026*
+
+- **Neu:** TimeTrack läuft jetzt nur noch einmal: Startest du es ein zweites Mal – etwa über die Verknüpfung oder den Autostart –, wird das bereits laufende Fenster in den Vordergrund geholt und ein Hinweis eingeblendet, statt eine zweite Instanz zu öffnen. Lässt sich die laufende Instanz nicht erreichen, erklärt eine Meldung, was zu tun ist. So greifen nie zwei Instanzen gleichzeitig auf dieselbe Datenbank zu.
+- **Neu:** Globale Standardrundung: Die SAP-Verrechnung rundet jede Buchung auf die nächste angefangene Zeiteinheit auf. Die Standardrundung gilt ab Werk für 15 Minuten und ist für alle Projekte gleich, die sie erben.
+- **Neu:** Jedes Projekt wählt unter „Projekte“ seine Rundung: die Standardrundung erben, eine eigene Rundung (5, 10, 15 oder 60 Minuten) festlegen oder die Rundung für dieses Projekt ausschalten.
+- **Neu:** Auf der Seite „Projekte“ steht die Standardrundung über der Tabelle, und ein Stift-Button daneben ändert sie in einem Overlay. Die Spalte „Rundung“ zeigt „Standard (15 Minuten)“, „Aus“ oder den eigenen Wert.
+- **Verbessert:** Beim Neustart aus den Einstellungen (Sicherung wiederherstellen, Plugins) wartet die neue Instanz, bis die alte beendet ist.
+- **Verbessert:** Bestehende Projekte mit eigener Rundung behalten sie. Projekte ohne eigene Rundung nutzen künftig die Standardrundung. Wenn ein Projekt nicht gerundet werden soll, stelle es in seinen Einstellungen auf „Keine Rundung“.
+- **Verbessert:** Projekte anlegen und bearbeiten sowie Buchungen bearbeiten in der Stundenbuchung öffnen sich jetzt in einem Overlay über dem Fenster statt in einem Panel auf der Seite. Esc bricht ab. Neue Buchungen in der Stundenbuchung werden weiterhin direkt auf der Seite angelegt.
 
 ### 2026.47.8 - Navigation, Datumssprünge, Stundenbuchung und Tätigkeitsbericht
 
