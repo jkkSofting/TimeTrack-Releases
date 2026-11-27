@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.48.0** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.48.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,21 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.48.1 - Papierkorb und aufgeräumte Projekte
+
+*27. November 2026*
+
+- **Neu:** Inaktive Projekte sind auf der Seite „Projekte“ jetzt standardmäßig ausgeblendet. Der Schalter „Inaktive anzeigen“ in der Kopfzeile blendet sie wieder ein; sie erscheinen dann ausgegraut, und ein Hinweis zählt die ausgeblendeten Projekte. Die Spalte „Quick Switch“ heißt jetzt „Aktiv“: Ein Projekt ist aktiv und im Quick Switch wählbar, oder inaktiv, dann wird es ausgeblendet und dort nicht angeboten. Buchungen bleiben in beiden Fällen unberührt.
+- **Neu:** Auf der Seite „Projekte“ lassen sich die Stunden umschalten: „Netto“ zeigt die tatsächlich gebuchte Zeit, „Gerundet“ rundet jede Buchung auf die Rundung des Projekts auf, wie in der SAP-Verrechnung. Im gerundeten Modus nennt ein Tooltip an der Stundenzelle den Netto- und den gerundeten Wert. Die Wahl gilt bis zum Beenden des Programms.
+- **Neu:** Neuer Papierkorb unter „Verwaltung“: Gelöschte Projekte und einzeln gelöschte Buchungen liegen dort, getrennt in zwei Tabs. Du kannst sie wiederherstellen oder endgültig löschen, und „Papierkorb leeren“ entfernt alles auf einmal.
+- **Neu:** Ein Projekt im Papierkorb blendet seine Buchungen aus allen Ansichten und Summen aus. Stellst du es wieder her, kommen die Buchungen mit zurück – außer die, die du einzeln gelöscht hast.
+- **Neu:** Eine einzeln gelöschte Buchung, deren Projekt ebenfalls im Papierkorb liegt, stellt beim Wiederherstellen das Projekt mit wieder her.
+- **Neu:** Ist der Projektname beim Wiederherstellen inzwischen vergeben, erhält das Projekt den Zusatz „(wiederhergestellt)“. Ein Hinweis nennt den neuen Namen.
+- **Neu:** Auf der Seite „Projekte“ gibt es weitere Filter und eine Sortierung: Der Schalter „Filter“ neben der Suche klappt eine Leiste auf, in der du nach Typ (Intern/Extern), Kunde, Rundung (Standard, eigene oder keine) und „Nur Projekte mit Buchungen“ filterst. Mit „Sortieren nach“ ordnest du die Liste nach Name, Kunde, Kostenträger, Typ, Buchungen, Stunden, Rundung oder Aktiv, aufsteigend oder absteigend. Bei gleichen Werten gilt die Reihenfolge nach Name. Ein Klick auf einen Spaltenkopf stellt „Sortieren nach“ passend um, und umgekehrt zeigt der Spaltenkopf die gewählte Sortierung. Am Schalter steht, wie viele Filter aktiv sind; „Filter zurücksetzen“ löscht die Filter der Leiste. Unter dem Titel steht zum Beispiel „4 von 12 Projekten“, und eine leere Liste erklärt, dass keine Projekte zu den Filtern passen. Filter und Sortierung gelten bis zum Beenden des Programms.
+- **Verbessert:** Projekte und Buchungen löschst du jetzt in den Papierkorb: Vorher fragt TimeTrack nach, und „Nein“ ist der Standard. Der Knopf im Buchungs-Overlay heißt entsprechend „In den Papierkorb“.
+- **Verbessert:** Endgültiges Löschen und „Papierkorb leeren“ fragen ebenfalls nach und lassen sich nicht rückgängig machen.
+- **Verbessert:** Wird eine laufende Quick-Switch-Buchung gestoppt, deren Projekt inzwischen im Papierkorb liegt, erklärt TimeTrack das in einer Meldung, statt eine Buchung anzulegen, die es nicht gibt. Die Zeit geht in diesem Fall verloren; stelle das Projekt wieder her und trage sie unter „Buchungen“ nach.
 
 ### 2026.48.0 - Standardrundung, Overlays und nur eine Instanz
 
