@@ -8,7 +8,7 @@
 
 **Zeiterfassung für Windows.** Projekte anlegen, Stunden buchen, auswerten – und mit einem Klick zwischen Projekten wechseln. TimeTrack läuft unauffällig im Infobereich der Taskleiste.
 
-Aktuelle Version: **2026.48.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
+Aktuelle Version: **2026.48.1.1** &nbsp;·&nbsp; [**Zum Download**](https://github.com/jkkSofting/TimeTrack-Releases/releases/latest)
 
 Dieses Repository enthält die fertigen Installer (unter [Releases](https://github.com/jkkSofting/TimeTrack-Releases/releases)), die Anleitung und die Versionshistorie von TimeTrack.
 
@@ -81,6 +81,13 @@ Eine ausführlichere Erklärung aller Bereiche findest du in TimeTrack selbst un
 ## Changelog
 
 Die Einträge entsprechen der Seite **Hilfe & Neuigkeiten** in der App. Die neueste Version steht oben.
+
+### 2026.48.1.1 - Korrektur der Filterleiste und Hotfix-Versionen
+
+*27. November 2026*
+
+- **Behoben:** In der Filterleiste der Seite „Projekte“ zeigten „Rundung“ und „Sortieren nach“ im geschlossenen Zustand den Typnamen des Eintrags statt der gewählten Option. Jetzt steht dort wieder der tatsächliche Wert.
+- **Verbessert:** Versionsnummern mit vierter Stelle, etwa 2026.48.1.1, werden unterstützt: Die Update-Prüfung erkennt sie als neuer als 2026.48.1, und „Hilfe & Neuigkeiten“ führt sie als eigene Version. So lassen sich Hotfixes veröffentlichen, ohne die Versionsnummer weiterzuzählen.
 
 ### 2026.48.1 - Papierkorb und aufgeräumte Projekte
 
